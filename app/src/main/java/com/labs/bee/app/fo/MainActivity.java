@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 
@@ -17,18 +16,13 @@ import java.util.Arrays;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import core.adapter.TabPagerAdapter;
+import core.fragments.MessageFragment;
+import core.fragments.ShopFragment;
+import core.fragments.StatsFragment;
 
-public class MainActivity extends AppCompatActivity {
-
-    @BindView(R.id.tabs)
-    SmartTabLayout tabs;
-    @BindView(R.id.pager)
-    ViewPager pager;
-
-
-
-    private FragmentManager fragmentManager;
-    private ArrayList<String> titles = new ArrayList<String>(Arrays.asList("Incoming", "Progress", "Outcoming"));
+public class MainActivity extends BaseAppCompatActivity {
+    @BindView(R.id.navigation)
+    BottomNavigationView navigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,18 +30,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-//        mTextMessage = (TextView) findViewById(R.id.message);
-
-        // Initialize the ViewPager and set an adapter
-        pager.setAdapter(new TabPagerAdapter(this.titles, this.getSupportFragmentManager()));
-
-        // Bind the tabs to the ViewPager
-        tabs.setViewPager(pager);
-//        tabs.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-
-
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        showFragment(new MessageFragment());
     }
 
 
@@ -57,14 +42,14 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-//                    mTextMessage.setText(R.string.title_home);
+                case R.id.navigation_message:
+                    showFragment(new MessageFragment());
                     return true;
-                case R.id.navigation_dashboard:
-//                    mTextMessage.setText(R.string.title_dashboard);
+                case R.id.navigation_stats:
+                    showFragment(new StatsFragment());
                     return true;
-                case R.id.navigation_notifications:
-//                    mTextMessage.setText(R.string.title_notifications);
+                case R.id.navigation_shop:
+                    showFragment(new ShopFragment());
                     return true;
             }
             return false;

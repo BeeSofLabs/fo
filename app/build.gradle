@@ -57,7 +57,7 @@ dependencies {
 
     compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar' // swipe tab
     compile 'com.squareup.okhttp3:okhttp:3.2.0'  // http request
-//    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
     compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2' // picasso + okhttp
     compile 'com.eclipsesource.minimal-json:minimal-json:0.9.4' // json parser
     compile 'com.google.dagger:dagger:2.7' //dagger itself
