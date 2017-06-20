@@ -11,4 +11,7 @@ public interface IConfig {
     public String PROCESS_TAB_NAME = "Progress";
     public String OUTCOMING_TAB_NAME = "Outcoming";
 
+    //    API
+    String API_ROOT_MENUS = "menus";
+
 }
