@@ -19,6 +19,7 @@ import core.adapter.TabPagerAdapter;
 import core.fragments.MessageFragment;
 import core.fragments.ShopFragment;
 import core.fragments.StatsFragment;
+import core.fragments.WalletFragment;
 
 public class MainActivity extends BaseAppCompatActivity {
     @BindView(R.id.navigation)
@@ -50,6 +51,9 @@ public class MainActivity extends BaseAppCompatActivity {
                     return true;
                 case R.id.navigation_shop:
                     showFragment(new ShopFragment());
+                    return true;
+                case R.id.navigation_wallet:
+                    showFragment(new WalletFragment());
                     return true;
             }
             return false;

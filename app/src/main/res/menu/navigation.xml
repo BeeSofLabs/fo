@@ -16,4 +16,9 @@
         android:icon="@mipmap/ic_menu"
         android:title="@string/title_shop" />
 
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@mipmap/ic_wallet"
+        android:title="@string/title_wallet" />
+
 </menu>

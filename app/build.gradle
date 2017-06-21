@@ -56,6 +56,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-maps:9.4.0'
     compile 'com.google.android.gms:play-services-places:9.4.0'
 
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
     compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar' // swipe tab
     compile 'com.squareup.okhttp3:okhttp:3.2.0'  // http request
     compile 'de.greenrobot:eventbus:3.0.0-beta1'
