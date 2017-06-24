@@ -1,15 +1,9 @@
 package core.fragments;
 
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
-import android.text.style.RelativeSizeSpan;
-import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -117,7 +111,7 @@ public class StatsFragment extends BaseFragment implements SeekBar.OnSeekBarChan
         l.setYOffset(0f);
 
         // entry label styling
-        mChart.setEntryLabelColor(getResources().getColor(R.color.app_dark_green));
+        mChart.setEntryLabelColor(getResources().getColor(R.color.app_green_soft));
         mChart.setEntryLabelTypeface(mTfRegular);
         mChart.setEntryLabelTextSize(12f);
 
@@ -175,7 +169,7 @@ public class StatsFragment extends BaseFragment implements SeekBar.OnSeekBarChan
         PieData data = new PieData(dataSet);
         data.setValueFormatter(new PercentFormatter());
         data.setValueTextSize(11f);
-        data.setValueTextColor(getResources().getColor(R.color.app_dark_green));
+        data.setValueTextColor(getResources().getColor(R.color.app_green_soft));
         data.setValueTypeface(mTfLight);
         mChart.setData(data);
 

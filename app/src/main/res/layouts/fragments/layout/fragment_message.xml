@@ -3,15 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <com.ogaclejapan.smarttablayout.SmartTabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        app:stl_indicatorColor="@color/app_dark_green"
-        app:stl_defaultTabTextColor="@color/app_dark_green"
-        app:stl_indicatorInterpolation="linear"
+        app:stl_indicatorColor="@color/app_green_soft"
+        app:stl_indicatorInFront="false"
+        app:stl_defaultTabTextColor="@color/app_green_soft"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_titleOffset="auto_center"
         app:stl_indicatorThickness="3dp"
         app:stl_underlineThickness="1dp" />
 

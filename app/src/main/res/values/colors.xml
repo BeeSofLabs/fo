@@ -5,5 +5,9 @@
     <color name="colorAccent">#FF4081</color>
 
     <!-- customize -->
-    <color name="app_dark_green">#02c8c2</color>
+    <color name="app_green_soft">#02c8c2</color>
+    <color name="app_red_soft">#f55b5b</color>
+    <color name="app_purple_soft">#9966cc</color>
+    <color name="app_green">#33cc66</color>
+
 </resources>
