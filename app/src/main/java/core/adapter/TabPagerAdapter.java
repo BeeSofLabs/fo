@@ -6,7 +6,9 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import java.util.ArrayList;
 
-import core.fragments.IncomingFragment;
+import core.fragments.MessageIncomingFragment;
+import core.fragments.MessageOutcomingFragment;
+import core.fragments.MessageProcessFragment;
 
 /**
  * Created by ary on 6/19/17.
@@ -33,7 +35,17 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return new IncomingFragment();
+        switch (position){
+            case 0:
+                return new MessageIncomingFragment();
+            case 1:
+                return new MessageProcessFragment();
+            case 2:
+                return new MessageOutcomingFragment();
+        }
+
+        return null;
+
     }
 
     @Override

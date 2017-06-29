@@ -23,14 +23,14 @@ import seed.OrderDummy;
  * Created by ary on 6/20/17.
  */
 
-public class MessageIncomingAdapter extends RecyclerView.Adapter<MessageIncomingAdapter.NotifViewHolder> {
+public class MessageProcessAdapter extends RecyclerView.Adapter<MessageProcessAdapter.NotifViewHolder> {
 
     private Activity activity;
     private List<Order> items;
 
-    public MessageIncomingAdapter(Activity activity) {
+    public MessageProcessAdapter(Activity activity) {
         this.activity = activity;
-        this.items = (new OrderDummy()).getIncomingOrder(activity);
+        this.items = (new OrderDummy()).getProcessOrder(activity);
     }
 
     @Override

@@ -10,8 +10,10 @@ import io.realm.annotations.PrimaryKey;
 public class Order extends RealmObject {
     @PrimaryKey
     private int id;
-    private String ownerName;
-    private String ownerLocation;
+    private String person;
+    private String personUrl;
+    private String location;
+    private String status;
     private int foodNum;
     private int drinkNum;
 
@@ -23,20 +25,36 @@ public class Order extends RealmObject {
         this.id = id;
     }
 
-    public String getOwnerName() {
-        return this.ownerName;
+    public String getPerson() {
+        return this.person;
     }
 
-    public void setOwnerName(String ownerName) {
-        this.ownerName = ownerName;
+    public void setPerson(String ownerName) {
+        this.person = ownerName;
     }
 
-    public String getOwnerLocation() {
-        return this.ownerLocation;
+    public String getPersonUrl() {
+        return this.personUrl;
     }
 
-    public void setOwnerLocation(String ownerLocation) {
-        this.ownerLocation = ownerLocation;
+    public void setPersonUrl(String personUrl) {
+        this.personUrl = personUrl;
+    }
+
+    public String getLocation() {
+        return this.location;
+    }
+
+    public void setLocation(String ownerLocation) {
+        this.location = ownerLocation;
+    }
+
+    public String getStatus() {
+        return this.status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public int getFoodNum() {

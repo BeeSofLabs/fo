@@ -1,12 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@mipmap/ic_wallet_128" />
+
+    <LinearLayout
+        android:id="@+id/wallet_info"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Wallet Layout"
-        android:gravity="center"/>
+        android:layout_weight="1"
+        android:background="@drawable/border_bottom_line"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Saldo Anda"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="IDR 200.000,00"
+            android:textColor="@color/app_green_soft"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/partial_topup_credits" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/button_topup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_orange"
+            android:gravity="center"
+            android:text="topup"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
 
 </LinearLayout>

@@ -14,27 +14,29 @@ import com.labs.bee.app.fo.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import core.adapter.MessageIncomingAdapter;
+import core.adapter.MessageProcessAdapter;
 
 /**
  * Created by ary on 6/19/17.
  */
 
-public class IncomingFragment extends Fragment {
-    @BindView(R.id.list_incoming)
+public class MessageProcessFragment extends Fragment{
+
+    @BindView(R.id.list_process)
     RecyclerView recyclerView;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View layout = inflater.inflate(R.layout.fragment_incoming, container, false);
+        View layout = inflater.inflate(R.layout.fragment_process, container, false);
         ButterKnife.bind(this, layout);
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        MessageIncomingAdapter messageIncomingAdapter = new MessageIncomingAdapter(getActivity());
-        recyclerView.setAdapter(messageIncomingAdapter);
+        MessageProcessAdapter messageProcessAdapter = new MessageProcessAdapter(getActivity());
+        recyclerView.setAdapter(messageProcessAdapter);
         return layout;
     }
 }

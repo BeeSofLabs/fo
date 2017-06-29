@@ -1,7 +1,5 @@
 package com.labs.bee.app.fo;
 
-import java.util.Arrays;
-
 /**
  * Created by ary on 6/20/17.
  */
@@ -11,7 +9,12 @@ public interface IConfig {
     public String PROCESS_TAB_NAME = "Progress";
     public String OUTCOMING_TAB_NAME = "Outcoming";
 
+    public String INCOMING_STATUS_NAME = "INCOMING";
+    public String PROCESS_STATUS_NAME = "PROCESS";
+    public String OUTCOMING_STATUS_NAME = "OUTCOMING";
+
     //    API
     String API_ROOT_MENUS = "menus";
+    String API_ROOT_ORDERS = "orders";
 
 }
