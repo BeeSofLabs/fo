@@ -1,40 +1,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="10dp"
+    android:layout_height="50dp"
     android:orientation="horizontal">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:gravity="center"
+        android:layout_margin="5dp"
         android:text="Order"
         android:textStyle="bold"
         android:textColor="@color/app_green_soft"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="right"
-        android:text="Food"
-        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/notif_order_food_num"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="right"
-        android:paddingLeft="10dp"
-        android:text="15"
-        android:textColor="@color/app_purple_soft" />
-
-    <TextView
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="right"
-        android:text="Drink"
+        android:gravity="center"
+        android:background="@color/app_green_soft"
+        android:layout_margin="5dp"
+        android:text="Food  12"
+        android:textColor="@android:color/white"
         android:textStyle="bold" />
 
     <TextView
@@ -42,10 +30,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="right"
-        android:paddingLeft="10dp"
-        android:text="15"
-        android:textColor="@color/app_green" />
-
+        android:gravity="center"
+        android:background="@color/app_orange"
+        android:layout_margin="5dp"
+        android:text="Drink  15"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
 </LinearLayout>

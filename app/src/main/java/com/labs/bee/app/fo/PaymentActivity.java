@@ -22,5 +22,7 @@ public class PaymentActivity extends BaseAppCompatActivity {
 
         ButterKnife.bind(this);
 
+//        statusProgressLinebar.setScaleY(3f);
+
     }
 }

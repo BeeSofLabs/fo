@@ -53,8 +53,9 @@ public class MessageOutcomingAdapter extends RecyclerView.Adapter<MessageOutcomi
                 .into(holder.notifOwnerAvatar);
         holder.notifOwner.setText(order.getPerson());
         holder.notifLocation.setText(order.getLocation());
-        holder.notifOrderDrinkNum.setText("" + order.getDrinkNum());
-        holder.notifOrderFoodNum.setText("" + order.getFoodNum());
+
+        holder.notifOrderFoodNum.setText("Food  " + order.getFoodNum());
+        holder.notifOrderDrinkNum.setText("Drink  " + order.getDrinkNum());
     }
 
     @Override
