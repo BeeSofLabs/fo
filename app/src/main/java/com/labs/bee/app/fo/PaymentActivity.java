@@ -1,5 +1,6 @@
 package com.labs.bee.app.fo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.widget.ProgressBar;
@@ -24,5 +25,12 @@ public class PaymentActivity extends BaseAppCompatActivity {
 
 //        statusProgressLinebar.setScaleY(3f);
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, MainActivity.class));
+        finish();
     }
 }

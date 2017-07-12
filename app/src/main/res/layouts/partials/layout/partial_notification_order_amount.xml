@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:background="@color/app_green_soft"
+        android:background="@color/app_green"
         android:layout_margin="5dp"
         android:text="Food  12"
         android:textColor="@android:color/white"

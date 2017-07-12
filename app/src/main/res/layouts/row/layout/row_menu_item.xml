@@ -1,137 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="2dp"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
         android:orientation="horizontal">
 
+        <com.github.vipulasri.timelineview.TimelineView
+            android:id="@+id/time_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:line="@android:color/darker_gray"
+            app:linePadding="2dp"
+            app:lineSize="3dp"
+            app:marker="@drawable/circle_green"
+            app:markerInCenter="false"
+            app:markerSize="20dp" />
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp">
-
-            <ImageView
-                android:id="@+id/item_menu_image"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginBottom="50dp"
-                android:background="@android:color/darker_gray"
-                android:scaleType="fitXY" />
-
-
-            <LinearLayout
-                android:id="@+id/item_menu_info"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_menu_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/item_menu_image"
-                android:gravity="bottom"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/item_logo"
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0"
-                    android:scaleType="fitXY" />
-
-                <TextView
-                    android:id="@+id/item_menu_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignBottom="@+id/item_menu_image"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_gravity="bottom"
-                    android:layout_weight="1"
-                    android:alpha="0.8"
-                    android:gravity="center_vertical"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:text="Test"
-                    android:textColor="#fff"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:id="@+id/item_category"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_weight="0"
-                    android:padding="15dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
+                android:text="Menu #1"
+                android:textColor="@color/app_green_soft"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/item_menu_info"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:text="dkjsldjasldj dkjasld jsald asldjsaldjlsakd lasdj djskdj skdjskd skdsd skjdksjd ksjds dksjd sasd ds"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price 25.000 IDR"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/sample_person"/>
 
 
-                <TextView
-                    android:id="@+id/item_menu_price"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:alpha="0.8"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:paddingTop="15dp"
-                    android:text="IDR 5000,00"
-                    android:textColor="#ff272727"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/item_menu_likes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignRight="@+id/item_menu_info"
-                    android:alpha="0.8"
-                    android:paddingTop="15dp"
-                    android:text="-"
-                    android:textColor="#939292"
-                    android:textStyle="italic" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="right|center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-
-                    <TextView
-                        android:id="@+id/item_distance"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:text="0.5 Km"
-                        android:textColor="@color/app_green_soft"
-                        android:textSize="10sp" />
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-
-        </RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
-
 </LinearLayout>

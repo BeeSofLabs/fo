@@ -5,4 +5,6 @@ package core.dao.api;
  */
 
 public class BaseApi {
+
+
 }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,8 +21,7 @@ import butterknife.ButterKnife;
  */
 
 public class WalletFragment extends Fragment {
-    @BindView(R.id.button_topup)
-    Button buttonTopup;
+
 
     @Nullable
     @Override
@@ -29,13 +29,7 @@ public class WalletFragment extends Fragment {
         View layout = inflater.inflate(R.layout.fragment_wallet, container, false);
         ButterKnife.bind(this, layout);
 
-        buttonTopup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getContext(), PaymentActivity.class);
-                startActivity(intent);
-            }
-        });
         return layout;
     }
+
 }
