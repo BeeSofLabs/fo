@@ -11,7 +11,7 @@
         android:layout_margin="5dp"
         android:text="Order"
         android:textStyle="bold"
-        android:textColor="@color/app_green_soft"/>
+        android:textColor="@color/app_teal"/>
 
     <TextView
         android:id="@+id/notif_order_food_num"

@@ -38,7 +38,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="IDR 200.000,00"
-                android:textColor="@color/app_green_soft"
+                android:textColor="@color/app_teal"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 

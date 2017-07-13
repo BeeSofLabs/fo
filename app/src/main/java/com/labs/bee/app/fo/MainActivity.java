@@ -4,22 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.ogaclejapan.smarttablayout.SmartTabLayout;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import core.adapter.TabPagerAdapter;
 import core.fragments.MessageFragment;
 import core.fragments.ShopFragment;
 import core.fragments.StatsFragment;
@@ -68,7 +59,7 @@ public class MainActivity extends BaseAppCompatActivity {
 
     public void topUp(View v){
         Log.d("", "---------"+v.getTag());
-        v.setBackgroundColor(getResources().getColor(R.color.app_green_soft));
+        v.setBackgroundColor(getResources().getColor(R.color.app_teal));
         ((TextView) v).setTextColor(getResources().getColor(android.R.color.white));
         Intent intent = new Intent(this, PaymentActivity.class);
         startActivity(intent);

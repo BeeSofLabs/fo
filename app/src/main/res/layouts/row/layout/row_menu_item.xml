@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -11,47 +10,65 @@
         android:layout_marginTop="2dp"
         android:orientation="horizontal">
 
-        <com.github.vipulasri.timelineview.TimelineView
-            android:id="@+id/time_marker"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            app:line="@android:color/darker_gray"
-            app:linePadding="2dp"
-            app:lineSize="3dp"
-            app:marker="@drawable/circle_green"
-            app:markerInCenter="false"
-            app:markerSize="20dp" />
+        <include layout="@layout/partial_timeline" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:paddingBottom="10dp"
             android:layout_gravity="left"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp">
+
             <TextView
                 android:id="@+id/item_menu_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
                 android:text="Menu #1"
-                android:textColor="@color/app_green_soft"
-                android:textStyle="bold"
-                android:layout_marginBottom="5dp"/>
+                android:textColor="@color/app_teal"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="dkjsldjasldj dkjasld jsald asldjsaldjlsakd lasdj djskdj skdjskd skdsd skjdksjd ksjds dksjd sasd ds"/>
+                android:text="dkjsldjasldj dkjasld jsald asldjsaldjlsakd lasdj djskdj skdjskd skdsd skjdksjd ksjds dksjd sasd ds" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Price 25.000 IDR"
                 android:textColor="@android:color/black"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/sample_person"/>
+                android:src="@drawable/sample_person" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:src="@mipmap/ic_trash" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/delimiter_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_bottom_line" />
 
 
         </LinearLayout>

@@ -111,7 +111,7 @@ public class StatsFragment extends BaseFragment implements SeekBar.OnSeekBarChan
         l.setYOffset(0f);
 
         // entry label styling
-        mChart.setEntryLabelColor(getResources().getColor(R.color.app_green_soft));
+        mChart.setEntryLabelColor(getResources().getColor(R.color.app_teal));
         mChart.setEntryLabelTypeface(mTfRegular);
         mChart.setEntryLabelTextSize(12f);
 
@@ -169,7 +169,7 @@ public class StatsFragment extends BaseFragment implements SeekBar.OnSeekBarChan
         PieData data = new PieData(dataSet);
         data.setValueFormatter(new PercentFormatter());
         data.setValueTextSize(11f);
-        data.setValueTextColor(getResources().getColor(R.color.app_green_soft));
+        data.setValueTextColor(getResources().getColor(R.color.app_teal));
         data.setValueTypeface(mTfLight);
         mChart.setData(data);
 

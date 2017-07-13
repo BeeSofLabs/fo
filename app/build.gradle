@@ -56,7 +56,6 @@ dependencies {
     compile 'com.google.android.gms:play-services-maps:9.4.0'
     compile 'com.google.android.gms:play-services-places:9.4.0'
 
-    compile 'com.github.vipulasri:timelineview:1.0.5'
     compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
     compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar' // swipe tab

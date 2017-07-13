@@ -14,7 +14,7 @@ import com.labs.bee.app.fo.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import core.adapter.MenuAdapter;
+import core.adapter.MenuShopAdapter;
 
 /**
  * Created by ary on 6/20/17.
@@ -35,7 +35,7 @@ public class ShopFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        recyclerView.setAdapter(new MenuAdapter());
+        recyclerView.setAdapter(new MenuShopAdapter(getActivity()));
 
         return layout;
     }
