@@ -9,8 +9,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.labs.bee.app.fo.R;
+import com.orhanobut.dialogplus.DialogPlus;
+import com.orhanobut.dialogplus.ViewHolder;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,6 +24,10 @@ import core.adapter.MenuShopAdapter;
  */
 
 public class ShopFragment extends Fragment {
+    @BindView(R.id.shop_add)
+    ImageView shopAdd;
+    @BindView(R.id.menu_add)
+    ImageView menuAdd;
     @BindView(R.id.list_menu)
     RecyclerView recyclerView;
 
@@ -36,6 +43,40 @@ public class ShopFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         recyclerView.setAdapter(new MenuShopAdapter(getActivity()));
+
+
+        shopAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final DialogPlus dialog = DialogPlus.newDialog(getContext())
+                        .setContentHolder(new ViewHolder(R.layout.partial_dialog_shop_form))
+//                .setCancelable(true)
+//                .setGravity(gravity)
+//                .setAdapter(adapter)
+//                .setOnClickListener(dialogOnClick)
+                        .setExpanded(false)
+                        .setContentHeight(ViewGroup.LayoutParams.WRAP_CONTENT)
+                        .create();
+                dialog.show();
+            }
+        });
+
+        menuAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final DialogPlus dialog = DialogPlus.newDialog(getContext())
+                        .setContentHolder(new ViewHolder(R.layout.partial_dialog_shopmenu_form))
+//                .setCancelable(true)
+//                .setGravity(gravity)
+//                .setAdapter(adapter)
+//                .setOnClickListener(dialogOnClick)
+                .setExpanded(false)
+                .setContentHeight(ViewGroup.LayoutParams.WRAP_CONTENT)
+                        .create();
+                dialog.show();
+            }
+        });
+
 
         return layout;
     }
