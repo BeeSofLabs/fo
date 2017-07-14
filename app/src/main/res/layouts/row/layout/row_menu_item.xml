@@ -35,11 +35,14 @@
                 android:layout_height="wrap_content"
                 android:text="dkjsldjasldj dkjasld jsald asldjsaldjlsakd lasdj djskdj skdjskd skdsd skjdksjd ksjds dksjd sasd ds" />
 
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Price 25.000 IDR"
-                android:textColor="@android:color/black"
+                android:paddingTop="10dp"
+                android:text="IDR 25.000"
+                android:textSize="20dp"
+                android:textColor="@color/app_teal"
                 android:textStyle="bold" />
 
             <ImageView
@@ -48,19 +51,20 @@
                 android:layout_marginTop="10dp"
                 android:src="@drawable/sample_person" />
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="vertical">
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
 
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="right"
-                    android:src="@mipmap/ic_trash" />
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_white_trash"
+                    android:background="@color/app_red_soft"/>
             </LinearLayout>
 
             <View
