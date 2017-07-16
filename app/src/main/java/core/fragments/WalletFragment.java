@@ -12,6 +12,7 @@ import android.widget.Button;
 
 import com.labs.bee.app.fo.PaymentActivity;
 import com.labs.bee.app.fo.R;
+import com.squareup.picasso.LruCache;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +29,7 @@ public class WalletFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View layout = inflater.inflate(R.layout.fragment_wallet, container, false);
         ButterKnife.bind(this, layout);
+
 
         return layout;
     }

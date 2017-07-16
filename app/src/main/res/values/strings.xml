@@ -7,4 +7,8 @@
 
     <string name="payment_method_info">You can transfer to CIMB Bank \na/n Ary Suryawan with No. 8754882999</string>
     <string name="label_continue">continue</string>
+
+    <!--payment-->
+    <string name="payment_step1">Confirm Payment</string>
+    <string name="payment_step2">Completed</string>
 </resources>

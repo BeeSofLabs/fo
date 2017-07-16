@@ -5,76 +5,67 @@
     android:orientation="vertical">
 
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Saldo Anda"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/wallet_info"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/border_bottom_line"
-            android:gravity="center"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="IDR 200.000,00"
-                android:textColor="@color/app_teal"
-                android:textSize="30dp"
-                android:textStyle="bold" />
+                android:background="@android:color/white"
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:src="@mipmap/ic_wallet_128" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Saldo Anda"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/wallet_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_bottom_line"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="IDR 200.000,00"
+                        android:textColor="@color/app_teal"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:src="@mipmap/ic_wallet_128" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <include layout="@layout/partial_topup_credits" />
         </LinearLayout>
-
-
-    </LinearLayout>
-
-
-
-
-    <include layout="@layout/partial_topup_credits" />
-
-    <!--<RelativeLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:gravity="center_horizontal|bottom"-->
-        <!--android:orientation="vertical">-->
-
-
-        <!--<Button-->
-            <!--android:id="@+id/button_topup"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:background="@color/app_orange"-->
-            <!--android:gravity="center"-->
-            <!--android:text="topup"-->
-            <!--android:textColor="@android:color/white"-->
-            <!--android:textStyle="bold" />-->
-    <!--</RelativeLayout>-->
+    </ScrollView>
 
 
 </LinearLayout>

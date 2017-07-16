@@ -1,9 +1,11 @@
 package com.labs.bee.app.fo;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,10 +27,11 @@ public class MainActivity extends BaseAppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         showFragment(new MessageFragment());
+
+
     }
 
 

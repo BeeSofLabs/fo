@@ -42,7 +42,7 @@
                 android:paddingTop="10dp"
                 android:text="IDR 25.000"
                 android:textSize="20dp"
-                android:textColor="@color/app_teal"
+                android:textColor="@color/app_orange"
                 android:textStyle="bold" />
 
             <ImageView
