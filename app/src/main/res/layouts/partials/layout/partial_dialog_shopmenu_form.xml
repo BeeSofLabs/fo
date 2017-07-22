@@ -70,7 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/app_orange"
-        android:text="OK"
+        android:text="@string/label_save"
         android:textColor="@android:color/white"/>
 
 </LinearLayout>

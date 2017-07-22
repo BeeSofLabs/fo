@@ -6,6 +6,7 @@
 
     <!-- customize -->
     <color name="app_grey">#e6eae3</color>
+    <color name="app_dark_grey">#757B80</color>
     <color name="app_teal">#02c8c2</color>
     <color name="app_red_soft">#f55b5b</color>
     <color name="app_purple_soft">#9966cc</color>
