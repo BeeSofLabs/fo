@@ -1,17 +1,13 @@
 package com.labs.bee.app.fo;
 
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.View;
-import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.ProgressBar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import core.fragments.PaymentStep1Fragment;
+import support.fragments.PaymentStep1Fragment;
 
 /**
  * Created by ary on 6/29/17.

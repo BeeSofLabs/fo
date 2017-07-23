@@ -4,9 +4,9 @@ import android.content.Context;
 
 import java.util.List;
 
-import core.dao.OrderDao;
-import core.dao.model.Order;
-import core.dao.parser.OrderParser;
+import support.dao.OrderDao;
+import support.dao.model.Order;
+import support.dao.parser.OrderParser;
 
 /**
  * Created by ary on 6/24/17.

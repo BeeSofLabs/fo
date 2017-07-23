@@ -2,7 +2,7 @@ package com.labs.bee.app.fo;
 
 import org.junit.Test;
 
-import core.tools.util.DataUtil;
+import support.tools.util.DataUtil;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;

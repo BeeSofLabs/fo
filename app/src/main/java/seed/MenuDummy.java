@@ -4,9 +4,9 @@ import android.content.Context;
 
 import java.util.List;
 
-import core.dao.MenuDao;
-import core.dao.model.Menu;
-import core.dao.parser.MenuParser;
+import support.dao.MenuDao;
+import support.dao.model.Menu;
+import support.dao.parser.MenuParser;
 
 /**
  * Created by ary on 6/20/17.

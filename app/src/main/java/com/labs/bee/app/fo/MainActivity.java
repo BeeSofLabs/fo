@@ -1,11 +1,9 @@
 package com.labs.bee.app.fo;
 
-import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,10 +11,10 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import core.fragments.MessageFragment;
-import core.fragments.ShopFragment;
-import core.fragments.StatsFragment;
-import core.fragments.WalletFragment;
+import support.fragments.MessageFragment;
+import support.fragments.ShopFragment;
+import support.fragments.StatsFragment;
+import support.fragments.WalletFragment;
 
 public class MainActivity extends BaseAppCompatActivity {
     @BindView(R.id.navigation)

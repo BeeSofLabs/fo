@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Fo</string>
+    <string name="google_api_key">AIzaSyC_DSPFbbiyaaPVywY9CX5rOI9GHoOJG-4</string>
     <string name="title_message">Order</string>
     <string name="title_stats">Statistic</string>
     <string name="title_shop">Shop</string>
     <string name="title_wallet">Wallet</string>
+
+    <!-- Font awesome -->
+    <string name="label_remove_trash_fontawesome">Remove  &#xf1f8;</string>
 
     <string name="payment_method_info">You can transfer to CIMB Bank \na/n Ary Suryawan with No. 8754882999</string>
     <string name="label_pay">Pay</string>
