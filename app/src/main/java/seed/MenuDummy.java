@@ -4,9 +4,9 @@ import android.content.Context;
 
 import java.util.List;
 
-import support.dao.MenuDao;
-import support.dao.model.Menu;
-import support.dao.parser.MenuParser;
+import com.labs.bee.app.fo.presenter.dao.MenuDao;
+import com.labs.bee.app.fo.model.pojo.Menu;
+import com.labs.bee.app.fo.presenter.dao.parser.MenuParser;
 
 /**
  * Created by ary on 6/20/17.

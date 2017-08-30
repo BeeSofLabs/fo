@@ -3,8 +3,10 @@ package com.labs.bee.app.fo;
 import android.app.Application;
 import android.content.Context;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.labs.bee.app.fo.presenter.di.component.AppComponent;
+import com.labs.bee.app.fo.presenter.di.component.DaggerAppComponent;
+import com.labs.bee.app.fo.presenter.di.module.ApiServiceModule;
+import com.labs.bee.app.fo.presenter.di.module.AppModule;
 
 /**
  * Created by ary on 6/16/17.
@@ -12,33 +14,23 @@ import java.util.List;
 
 public class App extends Application {
 
-//    private static AppComponent component;
-
-    private static Context context;
-
-//    public static Application getApplication(){
-//        return app;
-//    }
-
-    public static Context getContext(){
-        return context;
-    }
+    private static AppComponent component;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        context = getApplicationContext();
-
-
-//        component = DaggerAppComponent.builder()
-//                .appModule(new AppModule(this))
-//                .build();
-
+        component = DaggerAppComponent.builder()
+                .appModule(new AppModule(this))
+                .apiServiceModule(new ApiServiceModule(this))
+                .build();
     }
 
+    public static AppComponent getComponent(Context context) {
+        return ((App) context.getApplicationContext()).component;
+    }
 
-
-//    public static AppComponent getComponent(Context context) {
-//        return ((App) context.getApplicationContext()).component;
-//    }
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+    }
 }

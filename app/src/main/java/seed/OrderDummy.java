@@ -4,9 +4,9 @@ import android.content.Context;
 
 import java.util.List;
 
-import support.dao.OrderDao;
-import support.dao.model.Order;
-import support.dao.parser.OrderParser;
+import com.labs.bee.app.fo.presenter.dao.OrderDao;
+import com.labs.bee.app.fo.model.pojo.Order;
+import com.labs.bee.app.fo.presenter.dao.parser.OrderParser;
 
 /**
  * Created by ary on 6/24/17.

@@ -5,6 +5,9 @@ package com.labs.bee.app.fo;
  */
 
 public interface IConfig {
+    String API_BASE_URL = "https://newsapi.org/v1/";
+    String DEFAULT_LOADING = "Loading";
+
     public String INCOMING_TAB_NAME = "Incoming";
     public String PROCESS_TAB_NAME = "Progress";
     public String OUTCOMING_TAB_NAME = "Outcoming";
