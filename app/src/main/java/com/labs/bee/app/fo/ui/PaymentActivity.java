@@ -7,10 +7,10 @@ import android.widget.FrameLayout;
 
 import com.labs.bee.app.fo.R;
 import com.labs.bee.app.fo.ui.base.BaseActivity;
+import com.labs.bee.app.fo.ui.fragment.PaymentStep1Fragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import com.labs.bee.app.fo.ui.fragment.PaymentStep1Fragment;
 
 /**
  * Created by ary on 6/29/17.

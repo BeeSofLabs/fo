@@ -11,13 +11,14 @@ import android.widget.TextView;
 
 import com.labs.bee.app.fo.R;
 import com.labs.bee.app.fo.ui.base.BaseActivity;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import com.labs.bee.app.fo.ui.fragment.MessageFragment;
 import com.labs.bee.app.fo.ui.fragment.ShopFragment;
 import com.labs.bee.app.fo.ui.fragment.StatsFragment;
 import com.labs.bee.app.fo.ui.fragment.WalletFragment;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 
 public class MainActivity extends BaseActivity {
     @BindView(R.id.navigation)
@@ -61,8 +62,8 @@ public class MainActivity extends BaseActivity {
     };
 
 
-    public void topUp(View v){
-        Log.d("", "---------"+v.getTag());
+    public void topUp(View v) {
+        Log.d("", "---------" + v.getTag());
         v.setBackgroundColor(getResources().getColor(R.color.app_teal));
         ((TextView) v).setTextColor(getResources().getColor(android.R.color.white));
         Intent intent = new Intent(this, PaymentActivity.class);
