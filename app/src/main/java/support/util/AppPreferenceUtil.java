@@ -3,7 +3,7 @@ package support.util;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.labs.bee.app.fo.R;
+import com.labs.beee.app.fo.R;
 
 
 /**
