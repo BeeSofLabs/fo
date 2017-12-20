@@ -1,8 +1,9 @@
 package com.labs.beee.app.fo.presenter.dao;
 
-import com.labs.beee.app.fo.ui.base.BaseActivity;
 import com.labs.beee.app.fo.model.api.Api;
 
+import app.beelabs.com.codebase.base.BaseActivity;
+import app.beelabs.com.codebase.base.BaseDao;
 import retrofit2.Callback;
 
 /**

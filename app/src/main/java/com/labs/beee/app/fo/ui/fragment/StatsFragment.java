@@ -24,10 +24,10 @@ import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.github.mikephil.charting.utils.MPPointF;
 import com.labs.beee.app.fo.R;
-import com.labs.beee.app.fo.ui.base.BaseFragment;
 
 import java.util.ArrayList;
 
+import app.beelabs.com.codebase.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -35,7 +35,7 @@ import butterknife.ButterKnife;
  * Created by ary on 6/20/17.
  */
 
-public class StatsFragment extends BaseFragment implements SeekBar.OnSeekBarChangeListener, OnChartValueSelectedListener {
+public class StatsFragment extends AppFragment implements SeekBar.OnSeekBarChangeListener, OnChartValueSelectedListener {
     @BindView(R.id.tvXMax)
     TextView tvX;
     @BindView(R.id.tvYMax)

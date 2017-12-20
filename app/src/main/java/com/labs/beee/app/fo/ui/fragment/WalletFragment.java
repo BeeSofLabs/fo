@@ -9,13 +9,14 @@ import android.view.ViewGroup;
 
 import com.labs.beee.app.fo.R;
 
+import app.beelabs.com.codebase.base.BaseFragment;
 import butterknife.ButterKnife;
 
 /**
  * Created by ary on 6/21/17.
  */
 
-public class WalletFragment extends Fragment {
+public class WalletFragment extends BaseFragment {
 
 
     @Nullable

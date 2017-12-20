@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 import com.labs.beee.app.fo.ui.PaymentActivity;
 import com.labs.beee.app.fo.R;
 
+import app.beelabs.com.codebase.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -19,7 +20,7 @@ import butterknife.ButterKnife;
  * Created by arysuryawan on 7/22/17.
  */
 
-public class PaymentStep1Fragment extends Fragment {
+public class PaymentStep1Fragment extends BaseFragment {
 
     @BindView(R.id.status_progress_linebar)
     ProgressBar statusProgressLinebar;
@@ -40,7 +41,7 @@ public class PaymentStep1Fragment extends Fragment {
         buttonStep1Payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((PaymentActivity) getActivity()).showFragment(new PaymentStep2Fragment());
+                ((PaymentActivity) getActivity()).showFragment(new PaymentStep2Fragment(), R.id.container);
             }
         });
 

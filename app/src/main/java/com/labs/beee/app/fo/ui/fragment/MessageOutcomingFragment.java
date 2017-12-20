@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import com.labs.beee.app.fo.R;
 
+import app.beelabs.com.codebase.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.labs.beee.app.fo.ui.adapter.MessageOutcomingAdapter;
@@ -19,7 +20,7 @@ import com.labs.beee.app.fo.ui.adapter.MessageOutcomingAdapter;
  * Created by ary on 6/19/17.
  */
 
-public class MessageOutcomingFragment extends Fragment {
+public class MessageOutcomingFragment extends BaseFragment {
     @BindView(R.id.list_outcoming)
     RecyclerView recyclerView;
 

@@ -13,6 +13,7 @@ import com.labs.beee.app.fo.ui.MainActivity;
 import com.labs.beee.app.fo.ui.PaymentActivity;
 import com.labs.beee.app.fo.R;
 
+import app.beelabs.com.codebase.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -20,7 +21,7 @@ import butterknife.ButterKnife;
  * Created by arysuryawan on 7/22/17.
  */
 
-public class PaymentStep2Fragment extends Fragment {
+public class PaymentStep2Fragment extends BaseFragment {
 
     @BindView(R.id.button_step2_payment)
     Button buttonStep2Payment;

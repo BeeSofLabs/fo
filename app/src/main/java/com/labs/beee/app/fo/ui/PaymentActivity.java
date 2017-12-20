@@ -6,9 +6,9 @@ import android.support.annotation.Nullable;
 import android.widget.FrameLayout;
 
 import com.labs.beee.app.fo.R;
-import com.labs.beee.app.fo.ui.base.BaseActivity;
 import com.labs.beee.app.fo.ui.fragment.PaymentStep1Fragment;
 
+import app.beelabs.com.codebase.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -28,7 +28,7 @@ public class PaymentActivity extends BaseActivity {
         ButterKnife.bind(this);
 
 
-        showFragment(new PaymentStep1Fragment());
+        showFragment(new PaymentStep1Fragment(), R.id.container);
 
     }
 

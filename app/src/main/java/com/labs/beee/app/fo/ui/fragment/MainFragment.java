@@ -8,7 +8,10 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.labs.beee.app.fo.model.api.response.MultipleResponse;
-import com.labs.beee.app.fo.ui.base.BaseFragment;
+
+import app.beelabs.com.codebase.base.BaseFragment;
+import app.beelabs.com.codebase.base.response.BaseResponse;
+import retrofit2.Response;
 
 
 /**
@@ -25,9 +28,9 @@ public class MainFragment extends BaseFragment {
 
 
     @Override
-    protected void onApiResponseCallback(MultipleResponse mr, String keyCallback) {
+    protected void onApiResponseCallback(Response response, BaseResponse mr, int keyCallback) {
         if (mr.getStatus().equals("ok")) {
-            Toast.makeText(getActivity(), "Status: OK, Size= " + mr.getSources().size(), Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), "Status: OK, Size= " + ((MultipleResponse)mr).getSources().size(), Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(getActivity(), "Status: 200, but error", Toast.LENGTH_LONG).show();
         }

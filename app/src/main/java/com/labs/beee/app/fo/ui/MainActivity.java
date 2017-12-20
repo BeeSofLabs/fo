@@ -10,12 +10,12 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.labs.beee.app.fo.R;
-import com.labs.beee.app.fo.ui.base.BaseActivity;
 import com.labs.beee.app.fo.ui.fragment.MessageFragment;
 import com.labs.beee.app.fo.ui.fragment.ShopFragment;
 import com.labs.beee.app.fo.ui.fragment.StatsFragment;
 import com.labs.beee.app.fo.ui.fragment.WalletFragment;
 
+import app.beelabs.com.codebase.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -31,7 +31,7 @@ public class MainActivity extends BaseActivity {
         ButterKnife.bind(this);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        showFragment(new MessageFragment());
+        showFragment(new MessageFragment(), R.id.container);
 
 
     }
@@ -44,16 +44,16 @@ public class MainActivity extends BaseActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_message:
-                    showFragment(new MessageFragment());
+                    showFragment(new MessageFragment(), R.id.container);
                     return true;
                 case R.id.navigation_stats:
-                    showFragment(new StatsFragment());
+                    showFragment(new StatsFragment(), R.id.container);
                     return true;
                 case R.id.navigation_shop:
-                    showFragment(new ShopFragment());
+                    showFragment(new ShopFragment(), R.id.container);
                     return true;
                 case R.id.navigation_wallet:
-                    showFragment(new WalletFragment());
+                    showFragment(new WalletFragment(), R.id.container);
                     return true;
             }
             return false;

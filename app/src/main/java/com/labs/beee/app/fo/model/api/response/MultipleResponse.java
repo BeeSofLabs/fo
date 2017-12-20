@@ -6,13 +6,15 @@ import com.labs.beee.app.fo.model.pojo.Source;
 
 import java.util.List;
 
+import app.beelabs.com.codebase.base.response.BaseResponse;
+
 
 /**
  * Created by arysuryawan on 8/19/17.
  */
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class MultipleResponse {
+public class MultipleResponse extends BaseResponse{
 
     private String status;
     private String source;

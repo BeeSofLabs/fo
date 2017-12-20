@@ -1,32 +1,33 @@
 package com.labs.beee.app.fo;
 
-import android.app.Application;
 import android.content.Context;
 
-import com.labs.beee.app.fo.presenter.di.component.AppComponent;
-import com.labs.beee.app.fo.presenter.di.component.DaggerAppComponent;
-import com.labs.beee.app.fo.presenter.di.module.ApiServiceModule;
-import com.labs.beee.app.fo.presenter.di.module.AppModule;
+import app.beelabs.com.codebase.base.BaseApp;
+import app.beelabs.com.codebase.di.component.AppComponent;
+import app.beelabs.com.codebase.di.component.DaggerAppComponent;
 
 /**
  * Created by ary on 6/16/17.
  */
 
-public class App extends Application {
+public class App extends BaseApp {
 
-    private static AppComponent component;
+    private static Context context;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        component = DaggerAppComponent.builder()
-                .appModule(new AppModule(this))
-                .apiServiceModule(new ApiServiceModule(this))
-                .build();
+        context = getApplicationContext();
+        setupBuilder(DaggerAppComponent.builder(), this);
     }
 
-    public static AppComponent getComponent(Context context) {
-        return ((App) context.getApplicationContext()).component;
+    public static Context getContext() {
+        return context;
+    }
+
+    public static AppComponent getAppComponent() {
+        if (context == null) return null;
+        return getComponent();
     }
 
     @Override

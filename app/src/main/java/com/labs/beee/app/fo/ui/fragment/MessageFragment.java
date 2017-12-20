@@ -17,6 +17,7 @@ import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import app.beelabs.com.codebase.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.labs.beee.app.fo.ui.adapter.TabPagerAdapter;
@@ -25,7 +26,7 @@ import com.labs.beee.app.fo.ui.adapter.TabPagerAdapter;
  * Created by ary on 6/20/17.
  */
 
-public class MessageFragment extends Fragment {
+public class MessageFragment extends BaseFragment {
 
     @BindView(R.id.tabs)
     SmartTabLayout tabs;

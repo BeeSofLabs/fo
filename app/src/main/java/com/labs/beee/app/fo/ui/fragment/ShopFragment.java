@@ -28,6 +28,7 @@ import com.orhanobut.dialogplus.ViewHolder;
 import java.io.IOException;
 import java.util.List;
 
+import app.beelabs.com.codebase.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.labs.beee.app.fo.ui.adapter.MenuShopAdapter;
@@ -36,7 +37,7 @@ import com.labs.beee.app.fo.ui.adapter.MenuShopAdapter;
  * Created by ary on 6/20/17.
  */
 
-public class ShopFragment extends Fragment implements OnMapReadyCallback {
+public class ShopFragment extends BaseFragment implements OnMapReadyCallback {
     @BindView(R.id.shop_add)
     ImageView shopAdd;
     @BindView(R.id.menu_add)

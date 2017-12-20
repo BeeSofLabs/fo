@@ -7,13 +7,14 @@ import com.labs.beee.app.fo.model.pojo.Menu;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.beelabs.com.codebase.base.BaseDao;
 import io.realm.RealmResults;
 
 /**
  * Created by ary on 6/20/17.
  */
 
-public class MenuDao extends BaseDao {
+public class MenuDao extends AppDao {
 
     protected MenuDao(Context context) {
         super(context);
